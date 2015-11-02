@@ -1,10 +1,10 @@
-﻿package view;
+package view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Collection;
 import java.util.Iterator;
- 
+
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -22,7 +22,7 @@ import data.Subject;
 import main.Controller;
 import net.miginfocom.swing.MigLayout;
 import view.dialog.JDialogNewGroup;
-
+ 
 /** Tab displaying a {@link Group}
  * 
  * @author Flotos

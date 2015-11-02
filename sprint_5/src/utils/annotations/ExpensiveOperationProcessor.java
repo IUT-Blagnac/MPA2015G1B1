@@ -1,4 +1,4 @@
-﻿package utils.annotations;
+package utils.annotations;
 
 import java.util.Set;
 
@@ -11,7 +11,7 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic;
 import javax.tools.Diagnostic.Kind;
-
+ 
 @SupportedSourceVersion(SourceVersion.RELEASE_7)
 @SupportedAnnotationTypes("utils.annotations.ExpensiveOperation")
 public class ExpensiveOperationProcessor extends AbstractProcessor {
