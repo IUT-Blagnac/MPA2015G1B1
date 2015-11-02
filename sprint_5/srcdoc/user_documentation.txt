@@ -1,0 +1,39 @@
+= Documentation Utilisateur SPRINT 0
+:Author:  Groupe projet 1B1 (CALVET Nicolas, CHEBBI Emmanuel, LE POGAM Léo, NOEL Alexa, PEYRON Florian, POUBLAN Jehan)
+:doctitle: Documentation utilisateur Projet OPTI
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:revnumber: 1
+:doctype: book
+include::asciidoc.conf[]
+
+include::presentation_en.txt[]
+
+== Functionalities
+
+- Nous avons une interface graphique avec différents onglets : Projets, Etudiants, Groupes, Sujets, Aide, A propos
+- L'onglet 'Projets' contient une zone d'affichage vide et un bouton supprimer non fonctionnel pour le moment.
+- L'onglet 'Etudiants' est vide pour le moment.
+- L'onglet 'Groupe' contient sa future structure.
+- L'onglet 'Sujets' affiche une liste de sujets à gauche et propose un onglet supprimer qui en supprime un.
+- L'onglet 'Aide' apporte une aide, pour le moment un Lorem Ipsum.
+- L'onglet "A propos" fournit des informations sur le projet et l'équipe en général. Cet onglet se trouve en haut à droite
+- Nous pouvons lire et écrire dans un fichier "csv".
+- Nous pouvons supprimer un projet.
+
+include::interface_en.txt[]
+
+== Précisions
+
+- Les fichiers "make.bat" et "run.bat" sont dans le dossier "SPRINT 0\OPTI".
+
+== Backlog
+
+include::backlog.txt[]
+ 
+== Installer AspectJ
+
+Voici un lien pour installer AspectJ (il faut l'ajouter depuis Eclipse): 
+
+http://download.eclipse.org/tools/ajdt/44/dev/update/
+

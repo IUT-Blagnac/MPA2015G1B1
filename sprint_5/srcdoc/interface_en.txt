@@ -1,0 +1,91 @@
+=== Model
+
+Display the models...
+
+=== Accurate models
+
+Display accurate models...
+
+=== Screen captures
+
+ 
+==== Display the Projects
+
+===== Functional part
+
+The GUI has been realized thanks to the __Mig Layout__ library.
+The first tab is tab 'Projects'. It displays the whole list of projects loaded by the program. +
+ +
+When a project is selected, the right panel displays every project's informations. For instance, we can
+read the name and the details of the projects, or even the team in charge of the project.
+
+===== Non-Functional part
+We can remove, modify or create a project.
+ +
+Otherwise, we cannot filter them yet.
+
+image::ongletProjet.png[width="80%"]
+
+
+==== Display the Students
+
+===== Functional part
+
+The tab __Etudiants__ is near than fully functional. The list of students is located on the left. When a student is selected,
+the informations known about him are displayed on the right, within __Détails__ and __Groupe__ panels. +
+This way, we can read all data about the student and his group.
+ +
+We can also create, modify or remove a student. +
+ +
+Finally, we can save the list of students or load another via 'Etudiants' menu.
+
+
+===== Non-Functional part
+
+We cannot filter the students to display yet.
+
+image::ongletEtudiant.png[width="80%"]
+
+
+==== Display the groups
+
+===== Functional part
+
+The tab __Groupes__ displays the teams of students.
+ +
+Actually, we can only display the informations about or team. We can also create a new team, but it is not fully functional.
+
+===== Non-Functional part
+
+When a new team is created, we can select an id which is already use, and we can select the same student more than once. +
+ +
+Moreover, we can neither modify nor delete a team.
+
+image::ongletGroupe.png[width="80%"]
+
+
+==== Display the subjects
+
+===== Functional part
+
+The tab __Sujets__ displays the list of available subjects. When a subject is selected, his title and his description are 
+displayed on the right. +
+ + 
+Moreover, we can create, modify or even delete a subject. Then, it is possible to save or load the subjects via 'Sujets' menu.
+
+===== Non-Functional part
+
+We cannot know which team choose the subject as a whish.
+
+image::ongletSujet.png[width="80%"]
+
+
+==== Display the stakeholders
+
+===== Functional part
+
+The tab __Intervenants__, displays the list of stakeholders.
+
+===== Non-Functional part
+
+image::ongletIntervenant.png[width="80%"]

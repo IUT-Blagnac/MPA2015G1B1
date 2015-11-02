@@ -1,0 +1,112 @@
+﻿The backlog of Spring 4 is presented below.
+
+The column 'Implemented' tells whether the features has been implemented in the source code. +
+The column 'Functional' tells whether the user can use the feature from the GUI. +
+ +
+The abbreviation used are :
+
+- *[red]#NOK#* : Not started
+
+- *[olive]#IP#* : In Progress
+
+- *[orange]#C#* : Terminated, but not functional (bugs)
+
+- *[lime]#OK#* : Both terminated and functional
+
+=== Sprint V0
+ 
+[cols="<,^,^", options="header"]
+|===
+3+^|List of tutored projects' subjects
+^s|Feature ^s| Implemented ^s| Functional
+|Create/Delete/Modify a subject | *[lime]#OK#* | *[lime]#OK#*
+|Filter subjects | *[olive]#IP#* | *[red]#NOK#*
+|===
+
+[cols="^,^,^", options="header"]
+|===
+3+^|Teams' wishes
+^s|Functional ^s| Implemented ^s| Functional
+|Create teams of students | *[lime]#OK#* | *[olive]#IP#*
+|Add students to teams | *[lime]#OK#* | *[lime]#OK#*
+|Set a team's wishes | *[lime]#OK#* | *[olive]#IP#*
+|===
+
+[cols="<,^,^", options="header"]
+|===
+3+^|Set teams' project
+^s|Functional ^s| Implemented ^s| Functional
+|Set team's subject | *[lime]#OK#* | *[red]#NOK#*
+|Display number of wishes per rank for a subject | *[lime]#OK#* | *[red]#NOK#*
+|Display for a team the number of challengers per rank of wish | *[lime]#OK#* | *[red]#NOK#*
+|Filter affected/non-affected subjects | *[lime]#OK#* | *[red]#NOK#*
+|Filter affected/non-affected teams | *[lime]#OK#* | *[red]#NOK#*
+|Calcul automatique de pré-affectation "au mieux" sur un ensemble de groupes non affectés | *[red]#NOK#* | *[red]#NOK#*
+|===
+
+[cols="<,^,^", options="header"]
+|===
+3+^|Add stakeholders to the projects
+^s|Functional ^s| Implemented ^s| Functional
+|Set a project's stakeholders | *[lime]#OK#* | *[olive]#IP#*
+|Display a stakeholder's projects | *[lime]#OK#* | *[lime]#OK#*
+|Display a project's stakeholders | *[lime]#OK#* | *[lime]#OK#*
+|===
+
+=== Sprint V1
+
+ 
+[cols="<,^,^", options="header"]
+|===
+3+^|Manipulation de données brutes
+^s|Functional ^s| Implemented ^s| Functional
+|Display the students registered in file etudiants2014_2015.csv | *[lime]#OK#* | *[lime]#OK#*
+|Display the stakeholders registered in file intervenants2014_2015.csv | *[lime]#OK#* | *[lime]#OK#*
+|Display the subjects registered in file sujets2014_2015.csv | *[lime]#OK#* | *[lime]#OK#*
+|Display the projects registered in file projets2014_2015.csv | *[lime]#OK#* | *[lime]#OK#*
+|Afficher la liste des étudiants ou des intervenants ou des sujets ou des projets d’un fichier .csv dans l’IHM, en supprimer certains puis l’enregistrer dans un fichier .csv de mon choix | *[lime]#OK#* | *[lime]#OK#*
+|Afficher la liste des étudiants puis ajouter un nouvel étudiant et sauvegarder la liste des étudiants dans un fichier .csv de mon choix | *[lime]#OK#* | *[lime]#OK#*
+|Afficher la liste des intervenants puis ajouter un nouvel intervenant et sauvegarder la liste des intervenants dans un fichier .csv de mon choix | *[lime]#OK#* | *[olive]#IP#*
+|Afficher la liste des sujets puis ajouter un nouveau sujet et sauvegarder la liste des projets dans un fichier .csv de mon choix | *[lime]#OK#* | *[olive]#IP#*
+|Afficher la liste des projets puis ajouter un nouveau projet et sauvegarder la liste des projets dans un fichier .csv de mon choix | *[lime]#OK#* | *[olive]#IP#*
+|Afficher la liste des projets puis cloner n’importe quel projet, l'éditer et sauvegarder la liste des projets dans un fichier .csv de mon choix | *[lime]#OK#* | *[red]#NOK#*
+|Une fois la liste des étudiants ou des intervenants ou des sujets ou des projets affichée dans l’IHM, je veux pouvoir sélectionner (filtrer) les éléments affichés sur chacun des champs du fichier .csv correspondant | *[red]#NOK#* | *[red]#NOK#*
+|===
+
+[cols="^,^,^", options="header"]
+|===
+3+^|Affichage des données croisées
+^s|Functional ^s| Implemented ^s| Functional
+|Afficher la liste des groupes indiquant le projet, le sujet, les étudiants et l’ensemble des intervenants du projet dans l’IHM | *[lime]#OK#* | *[orange]#C#*
+|Afficher la liste des étudiants indiquant le groupe, le sujet, le projet et l’ensemble des intervenants du projet dans l’IHM | *[lime]#OK#* | *[lime]#OK#*
+|Afficher dans l’IHM la liste des intervenants indiquant pour chaque projet, le sujet, le rôle, le groupe et le projet | *[lime]#OK#* | *[olive]#IP#*
+|===
+
+
+=== Sprint V2
+
+[cols="<,^,^", options="header"]
+|===
+3+^|Manipulation des données brutes
+^s|Functional ^s| Implemented ^s| Functional
+|Saisir les voeux de chaque groupe d'étudiants | *[lime]#OK#* | *[red]#NOK#*
+|===
+
+[cols="^,^,^", options="header"]
+|===
+3+^|Affichage des données croisées
+^s|Functional ^s| Implemented ^s| Functional
+|Sélectionner un numéro de voeux X et afficher tous les sujets sélectionnés en voeux numéro X | *[lime]#OK#* | *[red]#NOK#*
+|Sélectionner un sujet et voir tous les groupes sans sujet qui l’ont sélectionné en voeux numéro 1, tous les groupes sans sujet qui l’ont sélectionné en voeux numéro 2, tous les groupes sans sujet qui l’ont sélectionné en voeux numéro 3, … , tous les groupes sans sujet qui l’ont sélectionné en voeux numéro nombreDeSujets | *[red]#NOK#* | *[red]#NOK#*
+|Pour tous les sujets, voir combien de groupes l’ont choisi en voeux 1, combien de groupes l’ont choisi en voeux 2, …, combien de groupe l’ont choisi en voeux nombreDeSujets mais sans compter les groupes ayant déjà un proje | *[red]#NOK#* | *[red]#NOK#*
+|Afficher la liste des groupes avec pour chaque groupe le sujet qui leur est affecté (s’il existe) et le numéro de voeux correspondant, ainsi que les intervenants affectés s’il y en a (superviseur, support technique ou client) | *[lime]#OK#* | *[orange]#C#*
+|===
+
+[cols="<,^,^", options="header"]
+|===
+3+^|Affectation des sujets et des intervenants
+^s|Functional ^s| Implemented ^s| Functional
+|Sélectionner un sujet et un groupe pour créer un nouveau projet | *[lime]#OK#* | *[red]#NOK#*
+|Pré-affecter les groupes aux sujets en minimisant le rang du voeu choisi pour chaque groupe | *[red]#NOK#* | *[red]#NOK#*
+|Affecter tout intervenant à un projet et lui assigner un rôle (superviseur, support technique ou rapporteur) dans le projet | *[lime]#OK#* | *[red]#NOK#*
+|===
