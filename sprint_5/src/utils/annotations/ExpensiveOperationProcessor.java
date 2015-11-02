@@ -1,4 +1,4 @@
-package utils.annotations;
+﻿package utils.annotations;
 
 import java.util.Set;
 
@@ -19,7 +19,7 @@ public class ExpensiveOperationProcessor extends AbstractProcessor {
 	@Override
 	public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment env) {
 		
-		 processingEnv.getMessager().printMessage(Kind.NOTE, "D�marrage du processor");
+		 processingEnv.getMessager().printMessage(Kind.NOTE, "Démarrage du processor");
 
 		for( Element elem : env.getElementsAnnotatedWith(ExpensiveOperation.class) ) {
 			

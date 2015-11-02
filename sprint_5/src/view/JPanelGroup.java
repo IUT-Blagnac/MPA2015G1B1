@@ -1,4 +1,4 @@
-package view;
+﻿package view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -101,7 +101,7 @@ public class JPanelGroup extends JPanel implements Constants {
 			      "[100][100][100][100]",  				 // Column constraints
 			      "[20][100][25][25]"));     					 // Row constraints
 		
-		numero = new JLabel("Num�ro");
+		numero = new JLabel("Numéro");
 		fieldNumero = new JTextField();
 		modifyGroup = new JButton("Modifier");
 		deleteGroup = new JButton("Supprimer");
