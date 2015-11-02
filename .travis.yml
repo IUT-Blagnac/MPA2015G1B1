@@ -18,8 +18,10 @@ script:
   - echo Hello from DUT INFO Blagnac
   - ls -alF
   - cd sprint_5
-  - javac -cp .:./bin -d ./bin ./src/HelloMonde.java
-  - javac -cp .:./bin:../junit.jar -d ./bin ./src/HelloMondeTest.java
-  - java -jar ../plantuml.jar -Tpng -o srcdoc/images srcdoc/diag0.puml
-  - python ../asciidoc-8.6.7/asciidoc.py -a data-uri -o srcdoc/presentationFinale.html srcdoc/presentationFinale.txt
+  - call .\tools\aspectj1.7\bin\ajc -cp "%ASPECTJDIR%lib\aspectjrt.jar;%TOOLSDIR%junit.jar;%LIBDIR%miglayout-4.0-swing.jar;%LIBDIR%miglayout-4.0-javadoc.jar" -d .\bin\ -sourceroots .\src\ -source 1.7 2>>log\compilation.log
+  - python .\tools\asciidoc-8.6.9\asciidoc.py -source 1.7 -o .\doc\docTech.html .\srcdoc\docTech.txt 2>>log\documentation.log
+  - python .\tools\asciidoc-8.6.9\asciidoc.py -source 1.7 -o .\doc\docUti.html .\srcdoc\docUti.txt 2>>log\documentation.log
+  - python .\tools\asciidoc-8.6.9\asciidoc.py -source 1.7 -o .\doc\technical_documentation.html .\srcdoc\technical_documentation.txt 2>>log\documentation.log
+  - python .\tools\asciidoc-8.6.9\asciidoc.py -source 1.7 -o .\doc\user_documentation.html .\srcdoc\user_documentation.txt 2>>log\documentation.log
+  - javadoc -d doc/javadoc -sourcepath src -subpackages aspects:constants:data:log:main:model:utils:view:web 1>NUL 2>log\javadoc.log
   - ls -alF srcdoc
