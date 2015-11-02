@@ -1,0 +1,38 @@
+﻿== Software's Presentation
+
+=== Introduction
+
+The students who are in the second year of studies in the Technical Institute of Blagnac
+have Tutored Project to make in team. +
+ +
+These projects need to be carefully managed because they involve lots of actors, such as
+the students, their supervisor or the client. +
+Moreover, many subjects are offered to the students. To assign them in the best possible way,
+the teams have to rank these subjects as wishes.
+
+Thus, OPTI Project's aim is to product an application which makes tutored projects' management easier.
+
+=== Framework of Realization
+
+This software has been developped by 6 students in second year of studies in the Technical
+Institute of Blagnac.
+
+- _Jehan Poublan_ 
+- _Nicolas Calvet_
+- _Emmanuel Chebbi_
+- _Florian Peyron_
+- _Alexa Noel_
+- _Leo Le Pogam_
+
+
+=== Launch the Software
+
+To run the program, you just have to launch the batch script 'run.bat'.
+ + 
+This one is located in the directory +SPRINT X/OPTI+, where X is the number of the Spring.
+
+
+TIP: If an error occurs, launch the file 'make.bat' located in the same directory.
+Launch the file 'run.bat' again, the program must appear on the screen.
+
+

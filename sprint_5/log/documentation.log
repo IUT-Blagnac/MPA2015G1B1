@@ -1,0 +1,3 @@
+asciidoc: WARNING: interface.txt: line 1: section title out of sequence: expected level 1, got level 2
+asciidoc: WARNING: structure.txt: line 1: section title out of sequence: expected level 1, got level 2
+^C^C

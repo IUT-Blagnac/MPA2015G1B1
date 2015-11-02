@@ -1,0 +1,94 @@
+=== Maquette
+
+Affichage des maquettes...
+
+=== Maquette détaillée
+
+Affichage des maquettes détaillées...
+
+=== Captures d'écran 
+
+ 
+==== Affichage des projets
+
+===== Partie fonctionnelle
+
+L'IHM a été réalisée à l'aide de la librairie __Mig Layout__.
+Le premier onglet est l'onglet 'Projets'. Il permet d'accéder à la liste de tous les projets chargés par le programme. +
+ +
+Lorsqu'un projet est sélectionné, le panneau de droite affiche toutes les informations le concernant. On peut ainsi y
+lire le nom et les détails du sujet, le nom du groupe en charge et les étudiants qui le composent, et finalement la liste
+des intervenants concernés. Le rôle des intervenants n'est cependant pas encore précisé. +
+
+===== Partie non fonctionnelle
+On peut supprimer un projet, mais l'interface permettant d'en créer ou d'un modifier n'est pas encore opérationnelle. +
+ +
+Les filtres ne sont pas encore implémentés.
+
+image::ongletProjet.png[width="80%"]
+
+
+==== Affichage des étudiants
+
+===== Partie fonctionnelle
+
+L'onglet __Etudiants__ est presque entièrement fonctionnel. La liste des étudiants se trouve sur la gauche. En sélectionnant 
+un étudiant, les informations connues s'affichent dans les parties __Détails__ et __Groupe__ à droite. +
+On peut ainsi accéder à toutes les informations concernant l'étudiant et le groupe auquel il appartient. +
+ +
+On peut également créer, modifier et supprimer un étudiant. +
+ +
+Finalement, on peut sauvegarder la liste des étudiants ou en charger une nouvelle via le menu 'Etudiants'
+
+
+===== Partie non fonctionnelle
+
+Il n'est pas encore possible de filtrer les étudiants à afficher.
+
+image::ongletEtudiant.png[width="80%"]
+
+
+==== Affichage des groupes
+
+===== Partie fonctionnelle
+
+L'onglet __Groupes__ affiche les groupes d'étudiants.
+ +
+Actuellement, il est seulement possible de sélectionner un groupe dans une liste.
+
+===== Partie non fonctionnelle
+
+Normalement, lors de la sélection d'un groupe, les informations le concernant devrait s'afficher sur la partie de droite.
+Cependant, à cause d'un bug non résolu pour le moment, rien ne se produit. +
+ +
+Il n'est pas non plus possible de créer, modifier ou supprimer un groupe.
+
+image::ongletGroupe.png[width="80%"]
+
+
+==== Affichage des sujets
+
+===== Partie fonctionnelle
+
+L'onglet __Sujets__ présente la liste des sujets disponibles. Lorsq'un sujet est sélectionné, son titre et sa description
+s'affichent sur la droite. +
+ + 
+Par ailleurs, il est possible de créer, modifier et supprimer un sujet. On peut ensuite les sauvegarder ou en charger 
+de nouveaux via le menu 'Sujets'.
+
+===== Partie non fonctionnelle
+
+Il n'est pas encore possible de savoir quel groupe à choisit le sujet et d'accéder au rang du voeu.
+
+image::ongletSujet.png[width="80%"]
+
+
+==== Affichage des intervenants
+
+===== Partie fonctionnelle
+
+L'onglet __Intervenants__, décrit la liste des intervenants. 
+
+===== Partie non fonctionnelle
+
+image::ongletIntervenant.png[width="80%"]

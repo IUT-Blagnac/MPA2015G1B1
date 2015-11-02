@@ -1,0 +1,73 @@
+:Author:  Group 1B1 (CALVET Nicolas, CHEBBI Emmanuel, LE POGAM Léo, NOEL Alexa, PEYRON Florian, POUBLAN Jehan)
+:doctitle: Technical documentation Project OPTI
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169; 
+:revnumber: 1
+:doctype: book
+
+= Technical documentation
+
+include::asciidoc.conf[]
+
+include::presentation_en.txt[]
+
+
+=== Compilation 
+
+Launch script 'make.bat' (which is located in directory +SPRINT X/OPTI+) to compile source files and generate all
+documentations. Note that, by default, documentations are created from files +SPRINT X/OPTI/srcdoc/doc*.txt+.
+
+TIP: You can display an execution trace in the terminal. To this end, open file 'src/log/Logger.java' and set the
+value of the variable +IS_LOGGER_ACTIVATED+ to 'true'.
+
+
+==== Source files' compilation
+
+If you only want to compile source files, you should launch the 'compile.bat' batch file. This script is located in
+the directory +SPRINT X/OPTI/scripts+. +
+ +
+This script will compile the files '*.java' located in directory +SPRINT X/OPTI/src+.
+
+IMPORTANT: To launch this file, you have to be located in the directory's parent (+SPRINT X/OPTI+)
+
+
+==== Documentations' generation
+
+if you only want to generate the documentations, you ought to use the batch file 'createDocumentation.bat', which is
+located in the directory +SPRINT X/OPTI/scripts+. +
+ +
+This script will generate documentation from files called 'doc*.txt' located in the directory +SPRINT X/OPTI/srcdoc+
+and will create files called 'doc*.html' in the directory +SPRINT X/OPTI/doc+. +
+ +
+You can also generate documentations from precise files with giving their names in parameter to the script.
+ +
+[underline]#For instance# : +
+--------------------------------------
+scripts\createDocumentation.bat srcdoc\docTech.txt srcdoc\docUti.txt
+--------------------------------------
+will create documentations 'doc/docTech.html' and 'doc/docUti.html'.
+
+IMPORTANT: To launch this file, you have to be located in the directory's parent (+SPRINT X/OPTI+)
+
+
+== Interface
+
+include::interface_en.txt[]
+
+
+== Global Structure and Choices of Design
+
+include::architecture_en.txt[]
+
+
+
+== Algorithms used
+
+=== Algorithme d'affectation des voeux
+
+Blah blah, on expliquera l'algorithme ici
+
+
+== Backlog
+
+include::backlog_en.txt[]

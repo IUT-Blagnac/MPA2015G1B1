@@ -1,0 +1,94 @@
+=== MVC Pattern
+
+We conceived the global architecture with the famous 'MVC Pattern'. This architecture is thus
+separated in three main parts :
+
+- the link:javadoc\view\View.html['view'] : manage graphical components,
+- the link:javadoc\model\Model.html['model'] : manage treatments on the data,
+- the link:javadoc\main\Controller.html['controller'] : receive the events and interect with the user
+
+
+=== Our implementation of the MVC Pattern
+
+Including the elements above, our architecture needed several components :
+
+- the link:javadoc\data\package-summary.html['data'] : the business classes, such as +Subject+ or +Student+,
+- the link:javadoc\utils\package-summary.html['tools'] : classes which aren't a direct link with the software, 
+but used to make the implementation easier.
+
+TIP: You can access to the javadoc of the project here : link:javadoc\index.html[javadoc].
+
+Finally, we can draw this package diagram :
+
+image::packages.png[]
+
+
+==== The Controller : interactions with the user
+
+The link:javadoc\main\Controller.html['Controller'] manage the interactions with the user. It implements the interface
++ActionListener+ and receive every events thrown by the link:javadoc\view\View.html['View']. +
+ +
+The differents events are identified by a single string (the ActionCommand, more details in paragraph). +
+ +
+To avoid many string comparisons at each time an event is received, the Controller owns a Hashmap
+which link the value of the ActionCommand to a  link:javadoc\utils\function\Function.html['Functor']. +
+The functor describe the actions to do when a certain event is received. +
+ +
+The interactions between the user and the program (data, value inputs, etc.) are managed using JDialogs.
+
+TIP: The classes which extend 'JDialog' are defined in package link:javadoc\view\dialog\package-summary.html['view.dialog'].
+
+
+==== The Model : treatments on data
+
+In our implementation, the Model do no one treatment. +
+ +
+Indeed, the treatments he's in charge of have been 'grouped' in 'three different categories'. Each of these
+categories is represented by a 'sub-manager' :
+
+- link:javadoc\model\SubjectManager.html['SubjectManager'] : manage treatments on the link:javadoc\data\Subject.html['Subjects'],
+- link:javadoc\model\StudentManager.html['StudentManager'] : manage treatments on the link:javadoc\data\Student.html['Students'] and the
+link:javadoc\data\Group.html['Teams']
+- link:javadoc\model\ProjectManager.html['ProjectManager'] : manage treatments on the link:javadoc\data\Project.html['Projects'] 
+and the link:javadoc\data\Stakeholder.html['Stakeholders']. 
+
+
+==== The View : displays the informations
+
+Explain the structure of the view, i.e. :
+
+- the differents JPanels,
+- MigLayout,
+- etc.
+
+
+=== Interactions between the components of the MVC
+
+The interactions between the components of the MVC can be shown by the following diagram :
+
+image::interactions.png[]
+
+The Controller receive the user's inputs (clic on a button, etc.). To 'distinguish
+the events', an 'ActionCommand' is associated to each of them. +
+ +
+For more security, the ActionCommand are defined with other constants in the interface +Constants+. These constants
+begin with either +EVT_+ (for classical events) or +MENU_EVT_+ (for a clic on a JMenuBar's item). +
+ +
+For exemple : +EVT_ADD_STUDENT+ defines the ActionCommand for an event which shows that the user want to add a new student.
+
+=== The business classes
+
+The UML representation of the business classes is :
+
+image::classesMetiers.png[width="90%"]
+
+==== Les classes d'association
+
+Les 'classes d'association' n'étant pas directement traduisibles en Java, nous avons décidé de les transcrire en tant que
+'tables de hachage' (classe +Hashtable+). +
+ +
+
+
+==== Les Intervenants (classe link:javadoc\data\Stakeholder.html['Stakeholder'])
+
+La classe d'association +Encadrer+ (cf diagramme UML ci-dessus) a été transformée en 
