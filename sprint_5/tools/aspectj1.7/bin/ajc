@@ -6,4 +6,4 @@ fi
 if [ "$ASPECTJ_HOME" = "" ] ; then ASPECTJ_HOME=D:/COURS/S3/MPA/Projet/GITHUB/MPA2015G1B1/sprint_5/tools/aspectj1.7
 fi
 
-"$JAVA_HOME/bin/java" -classpath "$ASPECTJ_HOME/lib/aspectjtools.jar;$JAVA_HOME/lib/tools.jar;$CLASSPATH" -Xmx64M org.aspectj.tools.ajc.Main "$@"
+java -classpath "./tools/aspectj1.7/lib/aspectjtools.jar;$JAVA_HOME/lib/tools.jar;$CLASSPATH" -Xmx64M org.aspectj.tools.ajc.Main "$@"
