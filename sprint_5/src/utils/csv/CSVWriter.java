@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class CSVWriter {
+public class CSVWriter { 
 
 	public static void toFile(File f, ArrayList<String[]> output)
 			throws IOException {
@@ -24,7 +24,7 @@ public class CSVWriter {
 			for (int value = 0; value < output.get(line).length; value++) {
 				fw.write(output.get(line)[value]);
 
-				// Si ce n'est pas la dernière valeur, on rajoute une virgule
+				// Si ce n'est pas la derniï¿½re valeur, on rajoute une virgule
 				if (value < output.get(line).length - 1) {
 					fw.write(";");
 				}

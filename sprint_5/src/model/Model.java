@@ -15,7 +15,7 @@ import data.Stakeholder;
 import data.Student;
 import data.Subject;
 import utils.annotations.ExpensiveOperation;
-
+ 
 /**
  * Make actions on data.
  * 

@@ -16,7 +16,7 @@ import net.miginfocom.swing.MigLayout;
 
 /** Onglet des Students
  * 
- * @author Flotos
+ * @author Flotos 
  *
  */
 public class JPanelStudent extends JPanel implements Constants {
@@ -67,11 +67,11 @@ public class JPanelStudent extends JPanel implements Constants {
 		labelName = new JLabel("Nom");
 		name = new JTextField();
 		name.setEditable(false);
-		labelFirstName = new JLabel("Prénom");
+		labelFirstName = new JLabel("Prï¿½nom");
 		firstName = new JTextField();
 		firstName.setEditable(false);
 		
-		//Les ajoute à l'onglet et les organise
+		//Les ajoute ï¿½ l'onglet et les organise
 		//=Panel de gauche
 		westSide.add(sortByLabel, "span, growx");
 		westSide.add(sortByStudent, "span, growx");
@@ -91,8 +91,8 @@ public class JPanelStudent extends JPanel implements Constants {
 		globalPanel.add(westSide, "west");
 		globalPanel.add(eastSide, "grow, width 100%, wrap");
 		
-		globalPanel.add(groupPanel, "grow"); //TODO à changer null par l'étudiant sélectionné
-		eastSide.setBorder(BorderFactory.createTitledBorder("Détails de l'étudiant"));
+		globalPanel.add(groupPanel, "grow"); //TODO ï¿½ changer null par l'ï¿½tudiant sï¿½lectionnï¿½
+		eastSide.setBorder(BorderFactory.createTitledBorder("Dï¿½tails de l'ï¿½tudiant"));
 
 		this.add(globalPanel, "grow");
 	}

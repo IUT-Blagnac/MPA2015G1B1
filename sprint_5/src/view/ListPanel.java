@@ -18,7 +18,7 @@ import javax.swing.event.ListSelectionListener;
 import constants.Constants;
 import main.Controller;
 
-/**
+/** 
  * Panel containing a JList
  * 
  * @author Emmanuel Chebbi
@@ -246,7 +246,7 @@ public class ListPanel <T> extends JPanel implements Constants, ListSelectionLis
 		if( e.getValueIsAdjusting() )
 			return;
 		
-		selectedIndex = getSelectedIndex( (ListSelectionModel)e.getSource() );	// On récupère l'indice de l'item sélectionné
+		selectedIndex = getSelectedIndex( (ListSelectionModel)e.getSource() );	// On rï¿½cupï¿½re l'indice de l'item sï¿½lectionnï¿½
 		
 		if( selectedIndex >= 0 )
 			controller.actionPerformed( new ActionEvent(listModel.getElementAt(selectedIndex), 0, eventAtSelection) );

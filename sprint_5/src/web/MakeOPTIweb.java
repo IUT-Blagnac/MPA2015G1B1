@@ -11,7 +11,7 @@ import java.util.Comparator;
 
 import utils.csv.CSVReader;
 
-public class MakeOPTIweb {
+public class MakeOPTIweb { 
 	
 	public static void main( String[] args ) {
 		try {
@@ -29,6 +29,24 @@ public class MakeOPTIweb {
 	private String ln = "\n";
 	
 	private ArrayList <String[]> students = null, subjects = null, stakeholders = null, projects = null;
+	
+	//GETTER POUR TESTS !
+	
+	public ArrayList<String[]> getStudents() {
+		return students;
+	}
+
+	public ArrayList<String[]> getSubjects() {
+		return subjects;
+	}
+
+	public ArrayList<String[]> getStakeholders() {
+		return stakeholders;
+	}
+	
+	public ArrayList<String[]> getProjects() {
+		return projects;
+	}
 	
 	public MakeOPTIweb(String studentFilePath, String subjectFilePath, String stakeholderFilePath, String projectFilePath) throws IOException {
 		
@@ -96,8 +114,8 @@ public class MakeOPTIweb {
 		return "<!-- DEBUT page accueil -->" + ln +
 				"<div data-role=\"page\" id=\"accueil\" data-title=\"OPTIweb - V0.1\">" + ln +
 				"<div data-role=\"header\" data-add-back-btn=\"true\">" + ln +
-				"<h1>P<span class=\"landscape\">rojets </span>tut<span class=\"landscape\">orés</span> 2014-2015<br/>Département INFO<span class=\"landscape\">RMATIQUE</span><br/>IUT de Blagnac</h1>" + ln +
-				"<a href=\"#credits\" data-theme=\"b\" class=\"ui-btn-right\">Crédits</a>" + ln +
+				"<h1>P<span class=\"landscape\">rojets </span>tut<span class=\"landscape\">orï¿½s</span> 2014-2015<br/>Dï¿½partement INFO<span class=\"landscape\">RMATIQUE</span><br/>IUT de Blagnac</h1>" + ln +
+				"<a href=\"#credits\" data-theme=\"b\" class=\"ui-btn-right\">Crï¿½dits</a>" + ln +
 				"</div>" + ln +
 				"<div data-role=\"content\">" + ln +
 				"<ul data-role=\"listview\" data-inset=\"true\" id=\"listeSources\">" + ln +
@@ -116,24 +134,24 @@ public class MakeOPTIweb {
 	
 	private String createDivCredits() {
 		return "<!-- DEBUT page credits -->" + ln +
-				"<div data-role=\"page\" id=\"credits\" data-title=\"OPTIweb - V0.1 - Crédits\">" + ln +
+				"<div data-role=\"page\" id=\"credits\" data-title=\"OPTIweb - V0.1 - Crï¿½dits\">" + ln +
 				"<div data-role=\"header\" data-add-back-btn=\"true\">" + ln +
-				"\t<h1>Crédits</h1>" + ln +
+				"\t<h1>Crï¿½dits</h1>" + ln +
 				"</div>" + ln +
 				"<div data-role=\"content\">" + ln +
-				"\t<p>Cette application a été réalisée dans le cadre du module M3301/MPA du DUT Informatique à l'IUT de Blagnac.</p>" + ln +
+				"\t<p>Cette application a ï¿½tï¿½ rï¿½alisï¿½e dans le cadre du module M3301/MPA du DUT Informatique ï¿½ l'IUT de Blagnac.</p>" + ln +
 				"<ul data-role=\"listview\" data-inset=\"true\" id=\"contacts\" data-theme=\"a\" data-divider-theme=\"b\">" + ln +
 				"\t<li data-role=\"list-divider\">Product Owner</li>" + ln +
-				"\t<li>André PÉNINOU</li>" + ln +
-				"\t<li>Université Toulouse 2 - IUT de Blagnac" + ln +
-				"\t<br/>Département INFORMATIQUE</li>" + ln +
+				"\t<li>Andrï¿½ Pï¿½NINOU</li>" + ln +
+				"\t<li>Universitï¿½ Toulouse 2 - IUT de Blagnac" + ln +
+				"\t<br/>Dï¿½partement INFORMATIQUE</li>" + ln +
 				"</ul>" + ln +
 				"<ul data-role=\"listview\" data-inset=\"true\" id=\"listecredits\" data-theme=\"a\" data-divider-theme=\"b\">" + ln +
-				"\t<li data-role=\"list-divider\">Membres de l'équipe enseignante</li>" + ln + 
-				"\t<li>Jean-Michel BRUEL</li><li>Jean-Michel INGLEBERT</li><li>André PÉNINOU</li><li>Olivier ROQUES</li>" + ln +
+				"\t<li data-role=\"list-divider\">Membres de l'ï¿½quipe enseignante</li>" + ln + 
+				"\t<li>Jean-Michel BRUEL</li><li>Jean-Michel INGLEBERT</li><li>Andrï¿½ Pï¿½NINOU</li><li>Olivier ROQUES</li>" + ln +
 				"</ul>" + ln +
 				"<ul data-role=\"listview\" data-inset=\"true\" id=\"listepowered\" data-theme=\"a\" data-divider-theme=\"b\">" + ln +
-				"\t<li data-role=\"list-divider\">Propulsé par</li>" + ln +
+				"\t<li data-role=\"list-divider\">Propulsï¿½ par</li>" + ln +
 				"\t<li><a href=\"http://jquerymobile.com/\" target=\"autrePage\">http://jquerymobile.com/</a></li>" + ln +
 				"\t<li><a href=\"http://fortawesome.github.io/Font-Awesome/\" target=\"autrePage\">http://fortawesome.github.io/Font-Awesome/</a></li>" + ln +
 				"</ul>" + ln +
@@ -145,7 +163,7 @@ public class MakeOPTIweb {
 				"<!-- FIN page credits -->" + ln;
 	}
 	
-	private String createDivProject(
+	public String createDivProject(
 			ArrayList <String[]> projects, ArrayList <String[]> stakeholders, ArrayList <String[]> subjects, ArrayList <String[]> students) {
 		
 		String divContent = "<!-- DEBUT page projets -->" + ln +
@@ -217,7 +235,7 @@ public class MakeOPTIweb {
 		return divContent;
 	}
 	
-	private String createDivSubject(ArrayList <String[]> subjects, ArrayList <String[]> projects) {
+	public String createDivSubject(ArrayList <String[]> subjects, ArrayList <String[]> projects) {
 		String divContent = "<!-- DEBUT page sujets -->" + ln +
 				"<div data-role=\"page\" id=\"sujets\" data-title=\"OPTIweb - V0.1\">" + ln + 
 				"<div data-role=\"header\" data-add-back-btn=\"true\">" + ln +
@@ -262,7 +280,7 @@ public class MakeOPTIweb {
 		return divContent;
 	}
 	
-	private String createDivStudent(ArrayList <String[]> students) {
+	public String createDivStudent(ArrayList <String[]> students) {
 		String divContent =	"<!-- DEBUT page etudiants -->" + ln +
 				"<div data-role=\"page\" id=\"etudiants\" data-title=\"OPTIweb - V0.1\">" + ln +
 				"<div data-role=\"header\" data-add-back-btn=\"true\">" + ln +
@@ -306,7 +324,7 @@ public class MakeOPTIweb {
 		return divContent;
 	}
 	
-	private String createDivStakeholder(ArrayList <String[]> stakeholders, ArrayList <String[]> projects) {
+	public String createDivStakeholder(ArrayList <String[]> stakeholders, ArrayList <String[]> projects) {
 		String divContent = "<!-- DEBUT page intervenants -->" + ln +
 				"<div data-role=\"page\" id=\"intervenants\" data-title=\"OPTIweb - V0.1\">" + ln +
 				"<div data-role=\"header\" data-add-back-btn=\"true\">" + ln +
@@ -361,4 +379,5 @@ public class MakeOPTIweb {
 				"</body>" + ln +
 				"</html>";
 	}
+	
 }

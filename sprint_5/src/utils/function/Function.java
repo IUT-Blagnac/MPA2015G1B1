@@ -6,7 +6,7 @@ package utils.function;
  * This interface is a generic type which takes two types : 
  * the function's return type and the number of arguments taken
  * by the function. <br />
- * <br />
+ * <br /> 
  * 
  * The number of arguments taken is represented by a simple class :
  * <ul>

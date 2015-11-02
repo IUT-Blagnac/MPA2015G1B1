@@ -24,7 +24,7 @@ import data.MyObject;
 import data.Project;
 import data.Stakeholder;
 import data.Student;
-
+ 
 public class JDialogNewGroup extends JDialogNew {
 
 	

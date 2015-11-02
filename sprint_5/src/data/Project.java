@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import data.Stakeholder.Category;
-
+ 
 /**
  * Represents a project.
  * <br/>
@@ -53,7 +53,7 @@ public class Project extends MyObject {
 	 * @param group		the Group to assign
 	 * @param subject	the Subject to assign
 	 */
-	public Project(@NotNull Group group, Subject subject) {
+	public Project(Group group, Subject subject) {
 		super();
 		this.group = group;
 		this.subject = subject;
@@ -160,10 +160,10 @@ public class Project extends MyObject {
 	public void setStakeholder(Stakeholder.Category category, Stakeholder stakeholder) throws IllegalArgumentException {
 		
 		if( category == Category.CLIENT && stakeholder == stakeholders[Category.SUPERVISOR.id()] )
-			throw new IllegalArgumentException("Le Client ne peut pas être le Superviseur");
+			throw new IllegalArgumentException("Le Client ne peut pas ï¿½tre le Superviseur");
 		
 		if( category == Category.SUPERVISOR && stakeholder == stakeholders[Category.CLIENT.id()] )
-			throw new IllegalArgumentException("Le Client ne peut pas être le Superviseur");
+			throw new IllegalArgumentException("Le Client ne peut pas ï¿½tre le Superviseur");
 		
 		Stakeholder previousStakeholder = this.stakeholders[category.id()];
 		

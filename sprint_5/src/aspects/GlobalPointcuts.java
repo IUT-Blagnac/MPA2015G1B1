@@ -8,7 +8,7 @@ import data.Project;
 import data.Stakeholder;
 import data.Student;
 import data.Subject;
-
+ 
 @Aspect
 public abstract class GlobalPointcuts {
 	

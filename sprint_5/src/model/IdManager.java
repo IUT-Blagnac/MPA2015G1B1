@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 /**
  * Manage a set of integer ids. 
- * 
+ *  
  * @author Emmanuel Chebbi
  */
 class IdManager {
@@ -83,7 +83,7 @@ class IdManager {
 		int lastIdUsed = associatedIds.isEmpty() ? -1 : associatedIds.last();
 		
 		// Si l'id est trop grand, on ajoute tous ceux qui
-		// sont 'oubliés' à la liste des ids à utiliser
+		// sont 'oubliï¿½s' ï¿½ la liste des ids ï¿½ utiliser
 		if( id > lastIdUsed+1 ) 
 			for( int unusedId = lastIdUsed+1 ; unusedId < id ; unusedId++ )
 				unusedIds.remove( new Integer(unusedId) );

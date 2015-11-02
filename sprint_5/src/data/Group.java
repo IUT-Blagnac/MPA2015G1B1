@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Group implements Comparable <Group> {
+public class Group implements Comparable <Group> { 
 	
 	// *****************************************************************************
 	//					ATTRIBUTS

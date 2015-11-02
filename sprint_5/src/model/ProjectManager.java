@@ -23,7 +23,7 @@ import data.Subject;
 import utils.csv.CSVReader;
 import utils.csv.CSVWriter;
 
-/**
+/** 
  * Manage every {@link Project} loaded by the program.
  * 
  * The ProjectManager has been conceived as a delegate-class of {@link Model};
@@ -268,7 +268,7 @@ public class ProjectManager {
 		ArrayList <String[]> data = CSVReader.fromFile(csvFileName);
 		
 		Iterator <String[]> intervenantData = data.iterator();
-		intervenantData.next();	// On passe la première ligne
+		intervenantData.next();	// On passe la premiï¿½re ligne
 		
 		try {
 			while( intervenantData.hasNext() ) {

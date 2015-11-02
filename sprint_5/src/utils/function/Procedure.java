@@ -22,5 +22,5 @@ package utils.function;
  */
 public interface Procedure<A extends Arg0> {
     
-    void invoke (A arguments);
+    void invoke (A arguments); 
 }

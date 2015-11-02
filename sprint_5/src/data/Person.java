@@ -1,5 +1,5 @@
 package data;
-
+ 
 public class Person extends MyObject {
 	
 	private String 	name,

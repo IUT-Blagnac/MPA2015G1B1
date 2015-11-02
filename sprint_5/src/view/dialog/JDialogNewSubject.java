@@ -14,7 +14,7 @@ import javax.swing.JTextField;
 
 import data.Subject;
 import net.miginfocom.swing.MigLayout;
-
+ 
 @SuppressWarnings("serial")
 public class JDialogNewSubject extends JDialogNew {
 
@@ -44,11 +44,11 @@ public class JDialogNewSubject extends JDialogNew {
 	
 	public void initContent() {
 		content = new JPanel(new MigLayout("wrap 4", "[100][100][100][100]"));
-		content.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.BLACK), "Détails du Sujet"));
+		content.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.BLACK), "Dï¿½tails du Sujet"));
 		
 		labelTitle = new JLabel("Titre : ");
 		txtTitle =  new JTextField();
-		labelDetails = new JLabel("Détails : ");
+		labelDetails = new JLabel("Dï¿½tails : ");
 		txtDetails = new JTextArea(5,5);
 		txtDetails.setBorder(BorderFactory.createLineBorder(Color.GRAY));
 		

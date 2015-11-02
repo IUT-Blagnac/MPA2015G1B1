@@ -1,6 +1,6 @@
 package data;
 
-public class Subject extends MyObject {
+public class Subject extends MyObject { 
 
 	private String 	title,
 					description;

@@ -1,5 +1,5 @@
 package view.dialog;
-
+ 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,7 +22,7 @@ import data.Project;
 import data.Student;
 import data.Subject;
 /**
- * Gère la fenêtre qui affiche les détails du projet sélectionné depuis l'onglet {@link JPanelIntervenant}
+ * Gï¿½re la fenï¿½tre qui affiche les dï¿½tails du projet sï¿½lectionnï¿½ depuis l'onglet {@link JPanelIntervenant}
  * 
  * @author Flotos
  *
@@ -37,15 +37,15 @@ public class JDialogDetailsProject extends JDialog implements Constants {
 	 * Default constructor.
 	 * 
 	 * @param sourceFrame - frame parent
-	 * @param controller - controller gérant le programme
-	 * @param project - projet duquel on affiche les détails
+	 * @param controller - controller gï¿½rant le programme
+	 * @param project - projet duquel on affiche les dï¿½tails
 	 */
 	public JDialogDetailsProject(JFrame sourceFrame,Controller controller, Project project) {
 		super(sourceFrame);
 		this.setLayout(new MigLayout());
 		System.out.println("In DialogDetail : " + project);
 		content = new JPanel(new MigLayout());
-		content.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.BLACK), "Détails du projet"));
+		content.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.BLACK), "Dï¿½tails du projet"));
 		content.add(new JPanelProject(controller, sourceFrame, project));
 		this.add(content);
 		

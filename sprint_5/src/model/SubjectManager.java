@@ -17,7 +17,7 @@ import data.MyObject;
 import data.Subject;
 import utils.csv.CSVReader;
 import utils.csv.CSVWriter;
-
+ 
 /**
  * Manage every {@link Subject} loaded by the program.
  * 

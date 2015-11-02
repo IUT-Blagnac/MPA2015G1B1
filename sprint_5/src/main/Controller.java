@@ -34,7 +34,7 @@ import data.Stakeholder.Category;
 import data.Student;
 import data.Subject;
 
-/**
+/** 
  * Manage events and interactions between the {@link View} and the <b>User</b>.
  * 
  * @author Emmanuel Chebbi
@@ -179,12 +179,12 @@ public class Controller implements Constants, ActionListener, MouseListener {
 //				Student student = view.getSelectedStudent();
 //				
 //				if( student == null ) {
-//					JOptionPane.showMessageDialog(view, "Aucun étudiant n'est sélectionné !", "Attention", JOptionPane.WARNING_MESSAGE);
+//					JOptionPane.showMessageDialog(view, "Aucun ï¿½tudiant n'est sï¿½lectionnï¿½ !", "Attention", JOptionPane.WARNING_MESSAGE);
 //					return;
 //				}
 //				
 //				int option = JOptionPane.showConfirmDialog( view, 
-//								"Voulez-vous vraiment supprimer l'étudiant(e) "+student.getFirstName()+" "+student.getName()+" ?", "Confirmation", 
+//								"Voulez-vous vraiment supprimer l'ï¿½tudiant(e) "+student.getFirstName()+" "+student.getName()+" ?", "Confirmation", 
 //								JOptionPane.YES_NO_OPTION );
 //				
 //				if( option == JOptionPane.YES_OPTION )
@@ -227,12 +227,12 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Student student = view.getSelectedStudent();
 				
 				if( student == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun étudiant n'est sélectionné !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun ï¿½tudiant n'est sï¿½lectionnï¿½ !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
 				int option = JOptionPane.showConfirmDialog( view, 
-								"Voulez-vous vraiment supprimer l'étudiant(e) "+student.getFirstName()+" "+student.getName()+" ?", "Confirmation", 
+								"Voulez-vous vraiment supprimer l'ï¿½tudiant(e) "+student.getFirstName()+" "+student.getName()+" ?", "Confirmation", 
 								JOptionPane.YES_NO_OPTION );
 				
 				if( option == JOptionPane.YES_OPTION )
@@ -247,7 +247,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Student student = view.getSelectedStudent();
 				
 				if( student == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun étudiant n'est sélectionné !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun ï¿½tudiant n'est sï¿½lectionnï¿½ !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
@@ -294,7 +294,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Subject subject = view.getSelectedSubject();
 				
 				if( subject == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun sujet n'est sélectionné !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun sujet n'est sï¿½lectionnï¿½ !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
@@ -314,7 +314,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Subject subject = view.getSelectedSubject();
 				
 				if( subject == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun sujet n'est sélectionné !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun sujet n'est sï¿½lectionnï¿½ !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
@@ -396,7 +396,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Project project = view.getSelectedProject();
 				
 				if( project == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun projet n'est sélectionné !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun projet n'est sï¿½lectionnï¿½ !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
@@ -416,7 +416,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Project project = view.getSelectedProject();
 				
 				if( project == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun projet n'est sélectionné !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun projet n'est sï¿½lectionnï¿½ !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
@@ -461,7 +461,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Stakeholder stakeholder = view.getSelectedStakeholder();
 				
 				if( stakeholder == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun(e) intervenant(e) n'est sélectionné(e) !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun(e) intervenant(e) n'est sï¿½lectionnï¿½(e) !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
@@ -481,7 +481,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 				Stakeholder stakeholder = view.getSelectedStakeholder();
 				
 				if( stakeholder == null ) {
-					JOptionPane.showMessageDialog(view, "Aucun(e) intervenant(e) n'est sélectionné(e) !", "Attention", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(view, "Aucun(e) intervenant(e) n'est sï¿½lectionnï¿½(e) !", "Attention", JOptionPane.WARNING_MESSAGE);
 					return;
 				}
 				
@@ -539,7 +539,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 					model.saveStudents(file);
 					
 					JOptionPane.showMessageDialog( view,
-							   "Fichier sauvegardé avec succès.", "Success !",
+							   "Fichier sauvegardï¿½ avec succï¿½s.", "Success !",
 							   JOptionPane.INFORMATION_MESSAGE );
 					
 				} catch(Exception e) {
@@ -592,7 +592,7 @@ public class Controller implements Constants, ActionListener, MouseListener {
 					model.saveSubjects(file);
 					
 					JOptionPane.showMessageDialog( view,
-							   "Fichier sauvegardé avec succès.", "Success !",
+							   "Fichier sauvegardï¿½ avec succï¿½s.", "Success !",
 							   JOptionPane.INFORMATION_MESSAGE );
 					
 				} catch(Exception e) {

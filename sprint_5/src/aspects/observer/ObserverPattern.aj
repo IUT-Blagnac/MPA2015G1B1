@@ -1,5 +1,5 @@
 /*package aspects.observer;
-
+ 
 import java.util.ArrayList;
 
 import aspects.GlobalPointcuts;
@@ -10,7 +10,7 @@ public abstract aspect ObserverPattern extends GlobalPointcuts {
 	//					OBSERVABLE
 	// ***************************************
 	
-	// Ajout d'une liste d'Observer à l'Observable
+	// Ajout d'une liste d'Observer ï¿½ l'Observable
 	private ArrayList<Observer> Observable.observers = new ArrayList<Observer>();
 	
 	public void Observable.addObserver( Observer obs ) {
@@ -31,7 +31,7 @@ public abstract aspect ObserverPattern extends GlobalPointcuts {
 	//					OBSERVER
 	// ***************************************
 	
-	// Ajout d'un Observable à l'Observer
+	// Ajout d'un Observable ï¿½ l'Observer
 	private Observable Observer.observable = null;
 	
 	public void Observer.setObservable( Observable obs ) {
@@ -46,10 +46,10 @@ public abstract aspect ObserverPattern extends GlobalPointcuts {
 	//					CHECK CHANGEMENTS 
 	// ***************************************
 	
-	// Point de coupure à surveiller
+	// Point de coupure ï¿½ surveiller
 	//abstract pointcut stateChanges( Observable obs );
 	
-	// Si le point de coupure est dépassé, on met les Observers à jour
+	// Si le point de coupure est dï¿½passï¿½, on met les Observers ï¿½ jour
 	/*after( Observable observable ) : stateChanges(observable) {
 		for( Observer observer : observable.getObservers() )
 			observer.update();

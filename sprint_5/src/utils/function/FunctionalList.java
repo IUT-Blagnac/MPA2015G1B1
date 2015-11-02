@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * instance to customize handling on elements.
  * 
  * @author Emmanuel Chebbi
- *
+ * 
  * @param <T>
  */
 @SuppressWarnings("serial")

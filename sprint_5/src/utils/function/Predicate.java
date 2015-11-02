@@ -21,3 +21,4 @@ package utils.function;
  * @see Procedure	
  */
 public interface Predicate<A extends Arg0> extends Function<Boolean, A> {}
+ 

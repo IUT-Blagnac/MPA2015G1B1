@@ -1,4 +1,4 @@
 /**
- * Contains every view oriented classes.
+ * Contains every view oriented classes. 
  */
 package view;

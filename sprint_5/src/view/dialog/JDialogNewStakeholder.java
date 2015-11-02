@@ -17,7 +17,7 @@ import net.miginfocom.swing.MigLayout;
 import data.Person;
 import data.Stakeholder;
 
-@SuppressWarnings("serial")
+@SuppressWarnings("serial") 
 public class JDialogNewStakeholder extends JDialogNew {
 	
 	private JPanel content;
@@ -60,7 +60,7 @@ public class JDialogNewStakeholder extends JDialogNew {
 		prenomTF = new JTextField();
 		projetsText = new JLabel("Projet : ");
 		projetsList = new JComboBox<String>();
-		roleText = new JLabel("Rôle : ");
+		roleText = new JLabel("Rï¿½le : ");
 		roleList = new JComboBox<String>();
 		
 		registerIntervenant = new JButton("Enregistrer");

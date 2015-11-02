@@ -13,7 +13,7 @@ import data.Student;
 import data.Subject;
 
 @Aspect
-public class Logger extends GlobalPointcuts {
+public class Logger extends GlobalPointcuts { 
 	
 	private final static boolean IS_LOGGER_ACTIVATED = true;
 	private final static String SEPARATOR = "----------------------------";

@@ -1,5 +1,5 @@
 package data;
-
+ 
 public abstract class MyObject {
 
 	private int id;

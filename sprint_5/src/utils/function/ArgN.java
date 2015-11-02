@@ -5,7 +5,7 @@ package utils.function;
  * 
  * Designed to be used by Functor classes.
  * 
- * @see Arg0
+ * @see Arg0 
  * @see Function
  * 
  * @author Emmanuel Chebbi

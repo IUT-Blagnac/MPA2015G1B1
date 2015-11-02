@@ -1,4 +1,4 @@
-package constants;
+package constants; 
 
 /**
  * Contains program's constants.
@@ -122,16 +122,16 @@ public interface Constants {
 	public final static String PAN_ABOUTUS_CONTENT =
 			"<html>"
 		+	" Nom du Projet : OPTI<br/>"
-		+	" SPRINT n°0<br/><br/>"
+		+	" SPRINT nï¿½0<br/><br/>"
 					
-		+ 	" Réalisé par les membres du groupe 1B1 :<br/>"
+		+ 	" Rï¿½alisï¿½ par les membres du groupe 1B1 :<br/>"
 		+	"	* CALVET Nicolas<br/>"
 		+	"	* CHEBBI Emmanuel<br/>"
-		+	"	* LE POGAM Léo<br/>"
+		+	"	* LE POGAM Lï¿½o<br/>"
 		+	"	* NOEL Alexa<br/>"
 		+	"	* PEYRON Florian<br/>"
 		+	"	* POUBLAN Jehan<br/><br/>"
 		
-		+	" Dans le cadre d'un projet de DUT INFO S3/Module MPA à l'IUT de Blagnac (Université Toulouse 2)"
+		+	" Dans le cadre d'un projet de DUT INFO S3/Module MPA ï¿½ l'IUT de Blagnac (Universitï¿½ Toulouse 2)"
 		+	"</html>";
 }

@@ -4,7 +4,7 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 
 import constants.Constants;
-
+ 
 public abstract class JDialogNew extends JDialog implements Constants {
 	
 	private boolean isDataValid = false;

@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 import data.Group;
 import data.Student;
 import net.miginfocom.swing.MigLayout;
-
+ 
 @SuppressWarnings("serial")
 public class JDialogNewStudent extends JDialogNew {
 	
@@ -35,7 +35,7 @@ public class JDialogNewStudent extends JDialogNew {
 	private boolean isDataValid = false;
 
 	public JDialogNewStudent(JFrame sourceFrame, Collection <Group> groups) {
-		super(sourceFrame, "Saisir un étudiant", true);
+		super(sourceFrame, "Saisir un ï¿½tudiant", true);
 
 		initContent(groups);
 
@@ -43,7 +43,7 @@ public class JDialogNewStudent extends JDialogNew {
 	}
 	
 	public JDialogNewStudent(JFrame sourceFrame, Collection <Group> groups, Student student) {
-		super(sourceFrame, "Saisir un étudiant", true);
+		super(sourceFrame, "Saisir un ï¿½tudiant", true);
 
 		
 		initContent(groups);

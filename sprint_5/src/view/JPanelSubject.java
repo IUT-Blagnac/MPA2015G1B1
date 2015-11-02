@@ -27,7 +27,7 @@ import data.Subject;
  * 
  * @author Nicolas Calvet
  *
- */
+ */ 
 public class JPanelSubject extends JPanel implements Constants {
 	
 	// **********************************************************
@@ -96,18 +96,18 @@ public class JPanelSubject extends JPanel implements Constants {
 		labelTitle = new JLabel("Titre");
 		title = new JTextField();
 		title.setEditable(false);
-		labelDetails = new JLabel("Détails");
+		labelDetails = new JLabel("Dï¿½tails");
 		textAreaDetails = new JTextArea(5, 5);
 		textAreaDetails.setBorder(BorderFactory.createLineBorder(Color.GRAY));
 		textAreaDetails.setEditable(false);
 		textAreaDetails.setLineWrap(true);
 		textAreaDetails.setWrapStyleWord(true);
 		labelVoeux = new JLabel("Voeux");
-		voeux = new JTable(data, columnNames); //TODO: data et columnNames à implémenter
+		voeux = new JTable(data, columnNames); //TODO: data et columnNames ï¿½ implï¿½menter
 		voeux.setAutoCreateRowSorter(true);
 		voeux.setEnabled(false);
 
-		//Les ajoute à l'onglet et les organise
+		//Les ajoute ï¿½ l'onglet et les organise
 		//=Panel de gauche
 		westSide.add(sortByLabel, "span, growx");
 		westSide.add(sortBySubject, "span, growx");
@@ -125,9 +125,9 @@ public class JPanelSubject extends JPanel implements Constants {
 		eastSide.add(voeux.getTableHeader(), "grow, span 4, wrap");
 		eastSide.add(voeux, "grow, span 4 4, wrap");
 		
-		eastSide.setBorder(BorderFactory.createTitledBorder("Détails du Sujet"));
+		eastSide.setBorder(BorderFactory.createTitledBorder("Dï¿½tails du Sujet"));
 		
-		//=Panel Général
+		//=Panel Gï¿½nï¿½ral
 		globalPanel.add(westSide, "west");
 		globalPanel.add(eastSide, "grow, width 100%");
 

@@ -1,6 +1,6 @@
 package aspects.observer;
 
-public interface Observer {
+public interface Observer { 
 	
 	void setObservable( Observable obs );
 	Observable getObservable();

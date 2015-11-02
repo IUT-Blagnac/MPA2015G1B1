@@ -23,7 +23,7 @@ import data.Stakeholder;
 import data.Student;
 import data.Subject;
 import main.Controller;
-
+ 
 /**
  * The main software's view.
  * 
@@ -115,7 +115,7 @@ public class View extends JFrame implements Constants {
 	// ***************************************
 	
 	/* -------------------------------------------------- MENU BAR ------------------
-	 * Crée la barre de menu
+	 * Crï¿½e la barre de menu
 	 */
 	private void createComponentMenuBar() {
 		
@@ -123,7 +123,7 @@ public class View extends JFrame implements Constants {
 		/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 			// ------------------------------------
-			// Item sauvegarde des étudiants
+			// Item sauvegarde des ï¿½tudiants
 			
 	        miSaveStudent = new JMenuItem("Sauvegarder...");
 	        miSaveStudent.addActionListener(controller);
@@ -131,7 +131,7 @@ public class View extends JFrame implements Constants {
 	        miSaveStudent.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, KeyEvent.CTRL_DOWN_MASK));
 	
 			// ------------------------------------
-			// Item chargement des étudiants
+			// Item chargement des ï¿½tudiants
 	        
 	        miLoadStudent = new JMenuItem("Charger...");
 	        miLoadStudent.addActionListener(controller);
@@ -262,7 +262,7 @@ public class View extends JFrame implements Constants {
 	        miHelp.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_H, KeyEvent.CTRL_DOWN_MASK + KeyEvent.SHIFT_DOWN_MASK));
 
 			// -----------------------------------
-			// Item à propos
+			// Item ï¿½ propos
 	        
 	        miAboutUs = new JMenuItem("A Propos...");
 	        miAboutUs.addActionListener(controller);
@@ -277,7 +277,7 @@ public class View extends JFrame implements Constants {
 	        
         
 		// -----------------------------------
-		// Ajout des menus à la barre de menus
+		// Ajout des menus ï¿½ la barre de menus
         
         menuBar = new JMenuBar();
         menuBar.add(menuStudent);
@@ -307,7 +307,7 @@ public class View extends JFrame implements Constants {
 		panProject = new JPanelProject(controller, this, null);
 		panIntervenant = new JPanelStakeholder(controller, this);
 		panHelp = new JPanel();
-		JLabel aide = new JLabel("En cas de difficultés, contacter Emmanuel Chebbi, le génialissime chef de projet à cette adresse : emmanuel.chebbi@etu.univ-tlse2.fr");
+		JLabel aide = new JLabel("En cas de difficultï¿½s, contacter Emmanuel Chebbi, le gï¿½nialissime chef de projet ï¿½ cette adresse : emmanuel.chebbi@etu.univ-tlse2.fr");
 		panHelp.add(aide);
 		
 		tabCenter = new JTabbedPane();

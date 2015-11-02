@@ -22,7 +22,7 @@ import javax.swing.JList;
 import javax.swing.SwingUtilities;
 import javax.swing.TransferHandler;
 
-@SuppressWarnings("serial")
+@SuppressWarnings("serial") 
 public class ListTransferHandler <T> extends TransferHandler implements DragGestureListener, DragSourceListener {
 	
     private int[] indices = null;

@@ -17,7 +17,7 @@ import net.miginfocom.swing.MigLayout;
 /** Onglet des Intervenants
  * 
  * @author Flotos
- */
+ */ 
 @SuppressWarnings("serial")
 public class JPanelStakeholder extends JPanel implements Constants {
 
@@ -53,19 +53,19 @@ public class JPanelStakeholder extends JPanel implements Constants {
 		sortByLabel = new JLabel("Trier par");
 		sortByIntervenant = new JComboBox <String> ();
 		listStakeholders = new ListPanel <Stakeholder> (controller, EVT_SELECT_STAKEHOLDER ); //TODO [JPanelIntervenant] ActionCommand event
-		sortAffected = new JCheckBox("Non-affectés");
+		sortAffected = new JCheckBox("Non-affectï¿½s");
 		newIntervenant = new JButton("Nouveau");
 		modifyStakeholder = new JButton("Modifier");
 		deleteStakeholder = new JButton("Supprimer");
 		labelName = new JLabel("Nom :");
 		name = new JTextField();
-		labelFirstName = new JLabel("Prénom :");
+		labelFirstName = new JLabel("Prï¿½nom :");
 		firstName = new JTextField();
 		labelId = new JLabel("Identifiant :");
 		id = new JTextField();
 		labelProject = new JLabel("Projects :");
 		fieldProject = new ListPanel <Project> (controller);
-		detailsProject = new JButton("Détails du projet");
+		detailsProject = new JButton("Dï¿½tails du projet");
 		
 		//actionsListener
 		newIntervenant.addActionListener(controller);
@@ -80,7 +80,7 @@ public class JPanelStakeholder extends JPanel implements Constants {
 		deleteStakeholder.addActionListener(controller);
 		deleteStakeholder.setActionCommand(EVT_REMOVE_STAKEHOLDER);
 		
-		//Les ajoute à l'onglet et les organise
+		//Les ajoute ï¿½ l'onglet et les organise
 		//=Panel de gauche
 		westSide.add(sortByLabel, "span, grow");
 		westSide.add(sortByIntervenant, "span, grow");
@@ -103,7 +103,7 @@ public class JPanelStakeholder extends JPanel implements Constants {
 
 		globalPanel.add(westSide, "grow");
 		globalPanel.add(eastSide, "grow, width 100%");
-		eastSide.setBorder(BorderFactory.createTitledBorder("Détail de l'intervenant"));
+		eastSide.setBorder(BorderFactory.createTitledBorder("Dï¿½tail de l'intervenant"));
 		this.add(globalPanel, "grow");
 		
 	}

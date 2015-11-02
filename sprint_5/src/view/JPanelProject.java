@@ -24,9 +24,9 @@ import data.Student;
 import data.Subject;
 
 @SuppressWarnings("serial")
-public class JPanelProject extends JPanel implements Constants{
+public class JPanelProject extends JPanel implements Constants{ 
 	
-	// **********************************************************
+	// ********************************************************** 
 	//					ATTRIBUTS
 	// ***************************************
 	
@@ -88,7 +88,7 @@ public class JPanelProject extends JPanel implements Constants{
 		panel = projectPanel(controller, project);
 		this.add(globalPanel, "grow");
 		globalPanel.add(panel, "grow, width 100%");
-		panel.setBorder(BorderFactory.createTitledBorder("Détails du Projet"));
+		panel.setBorder(BorderFactory.createTitledBorder("Dï¿½tails du Projet"));
 	}
 	
 	public JPanel projectPanel(Controller controller, Project project){
@@ -111,11 +111,11 @@ public class JPanelProject extends JPanel implements Constants{
 		
 		labelSubject = new JLabel("Titre du Sujet");
 		txtSubjectTitle = new JTextField();
-		labelDetailsSubject = new JLabel("Détails du Sujet");
+		labelDetailsSubject = new JLabel("Dï¿½tails du Sujet");
 		txtSubjectDescription = new JTextArea(3, 3);
 		labelGroupe = new JLabel("Groupe : ");
 		txtGroupId = new JTextField();
-		labelListStudents = new JLabel("Liste étudiants");
+		labelListStudents = new JLabel("Liste ï¿½tudiants");
 		listStudents = new ListPanel <Student> (controller,"");
 		labelIntervenant = new JLabel("Intervenants");
 		listIntervenant = new ListPanel <Stakeholder> (controller, "");
@@ -160,7 +160,7 @@ public class JPanelProject extends JPanel implements Constants{
 		txtSubjectTitle.setText(project.getSubject().getTitle());
 		txtSubjectDescription.setText(project.getSubject().getDescription());
 		
-		// On affiche les étudiants
+		// On affiche les ï¿½tudiants
 		txtGroupId.setText(project.getGroup().getId());
 		listStudents.updateList(project.getGroup().getStudents());
 		

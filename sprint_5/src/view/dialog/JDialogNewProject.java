@@ -18,7 +18,7 @@ import data.Group;
 import data.Project;
 import data.Subject;
 import net.miginfocom.swing.MigLayout;
-
+ 
 @SuppressWarnings("serial")
 public class JDialogNewProject extends JDialogNew {
 	
